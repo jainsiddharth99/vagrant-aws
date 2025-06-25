@@ -23,13 +23,11 @@ Since the original plugin is no longer maintained and available on RubyGems, you
     ```bash
     vagrant plugin install ./vagrant-aws-0.7.2.gem # (Verify the version number in vagrant-aws.gemspec)
     ```
-    * **Recommendation:** Consider bumping the version number in `vagrant-aws.gemspec` (e.g., from `0.7.2` to `0.7.3` or `0.7.2.patched`) to indicate your changes. If you do, update the command above accordingly.
 
 3.  **Add the Dummy Box:**
     ```bash
     vagrant box add aws-dummy [https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box](https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box)
     ```
-    * **Self-Hosting Dummy Box?** While this works, a more robust solution for the long term (if the original `dummy.box` ever disappears) would be to host `dummy.box` within *your* repository and update this URL to point to your fork.
-
+    
   
 For detailed configuration options and examples, please refer to the original documentation - [https://github.com/mitchellh/vagrant-aws](https://github.com/mitchellh/vagrant-aws)
