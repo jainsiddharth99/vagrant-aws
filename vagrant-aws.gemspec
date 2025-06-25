@@ -15,7 +15,10 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = ">= 1.3.6"
   s.rubyforge_project         = "vagrant-aws"
 
-  s.add_runtime_dependency "fog", "~> 1.22"
+# Change the line to look exactly like this:
+  # After
+  s.add_runtime_dependency "fog-aws"
+  s.add_runtime_dependency "fog-core"
   s.add_runtime_dependency "iniparse", "~> 1.4", ">= 1.4.2"
 
   s.add_development_dependency "rake"
